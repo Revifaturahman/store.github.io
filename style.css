@@ -1,0 +1,69 @@
+:root {
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: 'Playwrite DE Grund', cursive;
+  font-size: 1rem;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.4); /* Latar belakang putih dengan transparansi */
+  border-bottom: 1px solid #ddd;
+  z-index: -1;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Playwrite US Trad', cursive;
+  font-size: 2.5rem;
+  text-shadow: var(--shadow);
+}
+
+.mynavbar .nav-link,
+.mynavbar .dropdown .btn,
+.mynavbar li a {
+  font-family: 'Playwrite DE Grund', cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+}
+
+.home img {
+  height: 500px;
+  width: 100%;
+}
+
+.produk {
+  background-color: #f3f3f3;
+}
+
+.produk h2 {
+  font-size: 3rem;
+  font-family: 'Playwrite DE Grund', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .mynavbar .nav-link,
+  .mynavbar .dropdown .btn,
+  .mynavbar li a {
+    text-shadow: none;
+  }
+  .produk h2 {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mynavbar .nav-link,
+  .mynavbar .dropdown .btn,
+  .mynavbar li a {
+    text-shadow: none;
+  }
+  .produk h2 {
+    font-size: 50%;
+  }
+}
