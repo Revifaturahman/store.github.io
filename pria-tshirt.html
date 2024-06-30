@@ -11,7 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet" />
     <title>Document</title>
     <style>
-        body {
+
+      @media (max-width: 480px) {
+        .mynavbar .nav-link,
+        .mynavbar .dropdown .btn,
+        .mynavbar li a {
+          text-shadow: none;
+        }
+      }
+
+      /* Menampilkan dropdown pada hover di layar besar */
+      @media (min-width: 768px) {
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+
+      body {
   overflow-x: hidden;
 }
 
@@ -20,51 +36,8 @@
       .dropdown-toggle::after {
         display: none !important;
       }
-      /* Menampilkan dropdown pada hover di layar besar */
-      @media (min-width: 768px) {
-        .dropdown:hover .dropdown-menu {
-          display: block;
-        }
-      }
-      @media (max-width: 480px) {
-        .mynavbar .nav-link,
-        .mynavbar .dropdown .btn,
-        .mynavbar li a {
-          text-shadow: none;
-        }
-      }
-      @media (max-width: 375px){
-        .mynavbar .nav-link,
-        .mynavbar .dropdown .btn,
-        .mynavbar li a {
-          text-shadow: none;
-        }
 
-        .head h2 {
-          font-size: 1.5rem !important;
-        }
 
-        .buy {
-          position: absolute;
-          margin-left: 45px !important;
-        }
-      }
-      @media (max-width: 425px){
-        .mynavbar .nav-link,
-        .mynavbar .dropdown .btn,
-        .mynavbar li a {
-          text-shadow: none;
-        }
-
-        .head h2 {
-          font-size: 1.5rem !important;
-        }
-
-        .buy {
-          position: absolute;
-          margin-left: 55px !important;
-        }
-      }
       .mynavbar {
         background-color: rgba(255, 255, 255, 0.4); /* Latar belakang putih dengan transparansi */
         border-bottom: 1px solid #ddd;
@@ -196,7 +169,8 @@
             <img src="kaos.jpg" class="card-img-top" alt="Kaos">
             <div class="card-body">
               <h5 class="card-title text-center">Kaos</h5>
-              <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+              <p class="card-text">Rp.50K</p>
+              <a href="#" class="btn btn-primary buy w-100">BUY</a> 
             </div>
           </div>
         </div>
@@ -205,7 +179,8 @@
               <img src="kaos.jpg" class="card-img-top" alt="Kaos">
               <div class="card-body">
                 <h5 class="card-title text-center">Kaos</h5>
-                <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+                <p class="card-text">Rp.50K</p>
+                <a href="#" class="btn btn-primary buy w-100">BUY</a> 
               </div>
             </div>
           </div>
@@ -214,7 +189,8 @@
               <img src="kaos.jpg" class="card-img-top" alt="Kaos">
               <div class="card-body">
                 <h5 class="card-title text-center">Kaos</h5>
-                <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+                <p class="card-text">Rp.50K</p>
+                <a href="#" class="btn btn-primary buy w-100">BUY</a> 
               </div>
             </div>
           </div>
@@ -223,7 +199,8 @@
               <img src="kaos.jpg" class="card-img-top" alt="Kaos">
               <div class="card-body">
                 <h5 class="card-title text-center">Kaos</h5>
-                <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+                <p class="card-text">Rp.50K</p>
+                <a href="#" class="btn btn-primary buy w-100">BUY</a> 
               </div>
             </div>
           </div>
@@ -232,7 +209,8 @@
               <img src="kaos.jpg" class="card-img-top" alt="Kaos">
               <div class="card-body">
                 <h5 class="card-title text-center">Kaos</h5>
-                <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+                <p class="card-text">Rp.50K</p>
+                <a href="#" class="btn btn-primary buy w-100">BUY</a> 
               </div>
             </div>
           </div>
@@ -241,7 +219,8 @@
               <img src="kaos.jpg" class="card-img-top" alt="Kaos">
               <div class="card-body">
                 <h5 class="card-title text-center">Kaos</h5>
-                <p class="card-text">Rp.50K <a href="#" class="btn btn-primary buy">BUY</a></p> 
+                <p class="card-text">Rp.50K</p>
+                <a href="#" class="btn btn-primary buy w-100">BUY</a> 
               </div>
             </div>
           </div>
